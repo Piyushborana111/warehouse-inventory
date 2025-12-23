@@ -61,7 +61,7 @@ Frontend Packages
 
 
 Installation Guide
-1. git clone https://github.com/USERNAME/REPO_NAME.git
+1. git clone [https://github.com/USERNAME/REPO_NAME.git](https://github.com/Piyushborana111/warehouse-inventory.git)
 cd REPO_NAME
 
 2. Backend Setup
