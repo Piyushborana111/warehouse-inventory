@@ -1,59 +1,188 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+A modern Warehouse Inventory Management System built with Laravel 12 (REST API) and Vue 3 (SPA).
+Designed to manage warehouses, users, and inventory efficiently with scalable architecture and clean code practices.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+✨ Key Highlights
 
-## About Laravel
+Full-stack Laravel + Vue architecture
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Role-based access control
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Modular & scalable codebase
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+API-driven frontend
 
-## Learning Laravel
+Pagination & advanced searching
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Production-ready project structure
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+🧰 Tech Stack
+Backend
 
-## Laravel Sponsors
+Laravel 12
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+MySQL
 
-### Premium Partners
+RESTful APIs
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Laravel Sanctum (Auth)
 
-## Contributing
+Spatie Permission (Roles & Permissions)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Frontend
 
-## Code of Conduct
+Vue 3
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Vite
 
-## Security Vulnerabilities
+Vue Router
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Axios
 
-## License
+Bootstrap 5
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+📦 Features
+📊 Dashboard
+
+Centralized statistics overview
+
+API-based dynamic data loading
+
+🏢 Warehouses
+
+Create, update & delete warehouses
+
+Search & pagination
+
+Clean API responses
+
+👥 Users
+
+User CRUD operations
+
+Role assignment
+
+Secure API endpoints
+
+Pagination & searching
+
+📦 Inventory
+
+Product-wise stock management
+
+Warehouse-wise inventory
+
+Supplier & category mapping
+
+Search by product & supplier
+
+Optimized database relations
+
+📚 Installed Packages
+Backend Packages
+Package	Purpose
+laravel/sanctum	API Authentication
+spatie/laravel-permission	Role & Permission Management
+fakerphp/faker	Dummy Data Generation
+Frontend Packages
+Package	Purpose
+vue@3	Frontend framework
+vue-router	SPA routing
+axios	API communication
+bootstrap@5	UI styling
+🗂️ Project Structure
+warehouse-inventory/
+├── backend/
+│   ├── app/
+│   ├── database/
+│   │   ├── migrations/
+│   │   └── seeders/
+│   ├── routes/
+│   │   └── api.php
+│   └── controllers/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── router/
+│   │   └── services/
+│   └── vite.config.js
+
+⚙️ Installation Guide
+1️⃣ Clone Repository
+git clone https://github.com/USERNAME/REPO_NAME.git
+cd REPO_NAME
+
+2️⃣ Backend Setup (Laravel)
+cd backend
+composer install
+cp .env.example .env
+php artisan key:generate
+
+
+Update .env:
+
+DB_DATABASE=database_name
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+Run migrations & seeders:
+
+php artisan migrate --seed
+php artisan serve
+
+3️⃣ Frontend Setup (Vue 3)
+cd frontend
+npm install
+npm run dev
+
+🔐 Authentication & Authorization
+
+API authentication powered by Laravel Sanctum
+
+Role & permission handling using Spatie Laravel Permission
+
+Protected routes & middleware-based access control
+
+📈 Module Status
+Module	Status
+Dashboard	✅ Completed
+Warehouses	✅ Completed
+Users	✅ Completed
+Inventory	✅ Completed
+Categories	⏳ Upcoming
+Suppliers	⏳ Upcoming
+Reports	⏳ Planned
+🧪 Development Standards
+
+REST API best practices
+
+Request validation
+
+Service-based architecture
+
+Proper error handling
+
+Clean & maintainable code
+
+🚧 Future Enhancements
+
+Reports & analytics
+
+Export (CSV / Excel / PDF)
+
+Audit logs
+
+Notification system
+
+Multi-warehouse role hierarchy
+
+👨‍💻 Author
+
+Piyush Borana
+Laravel & Vue Developer
+
+📄 License
+
+This project is licensed under the MIT License.
