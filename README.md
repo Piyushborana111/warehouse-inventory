@@ -65,22 +65,22 @@ Installation Guide
 cd REPO_NAME
 
 2. Backend Setup
-   cd REPO_NAME
-   composer install
-   cp .env.example .env
-   php artisan key:generate
+   a. cd REPO_NAME
+   b. composer install
+   c. cp .env.example .env
+   d. php artisan key:generate
 4. Update .env
-DB_DATABASE=database_name
-DB_USERNAME=root
-DB_PASSWORD=
+    a. DB_DATABASE=database_name
+    b. DB_USERNAME=root
+    c. DB_PASSWORD=
 
 5. Run below commands inside terminal
-php artisan migrate --seed
-php artisan serve
+    a. php artisan migrate --seed
+    b. php artisan serve
 
 6. Frontend Setup (Vue 3)
-   npm install
-   npm run dev
+    a. npm install
+    b. npm run dev
 
 you will get a local url in terminal open it the project will open.
    
